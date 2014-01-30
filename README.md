@@ -1,4 +1,3 @@
-fynt-cms
-========
+# Context
 
 A pretty great way to build websites.
