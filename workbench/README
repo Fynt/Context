@@ -1,0 +1,9 @@
+The workbench is structured identically to the "vendor" directory, but you can add stuff in here adhock for development purposes. It makes developing extensions a little easier. 
+
+- clone Context repo
+- get it running
+- create extension repo
+- add git submodule in workbench for extension
+- make extension work
+- create release
+- add to bower
