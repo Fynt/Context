@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "Context-Data": "git+ssh://git@github.com/Fynt/Context-Data.git#develop"
+    "Context-Data": "git+ssh://git@github.com/Fynt/Context-Data.git#develop",
+    "konfig": "^0.1.3"
   }
 }

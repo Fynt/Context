@@ -10,8 +10,8 @@
 # it should also be smart enough to know to serve the ember apps from a tmp dir in development mode, and a dist dir in production
 
 # load the config
-#config = require './config'
-context = require 'Context-Data'
+config = require('konfig')()
+context = require('Context-Data')(config)
 
 # we need to register all of the extensions in here
 # each extension will likely have some blueprints
