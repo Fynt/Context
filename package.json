@@ -12,6 +12,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "Context-Data": "git+ssh://git@github.com/Fynt/Context-Data.git#feature/skeleton"
+    "Context-Data": "git+ssh://git@github.com/Fynt/Context-Data.git#develop"
   }
 }
