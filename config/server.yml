@@ -4,5 +4,7 @@ default:
 
   controller_directory: '../controllers'
 
+  enable_cors: true
+
 test:
   port: 5001
