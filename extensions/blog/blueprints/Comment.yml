@@ -1,2 +1,2 @@
 body:
-  type: 'Text'
+  type: 'richtext'

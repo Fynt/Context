@@ -1,6 +1,6 @@
 title:
-  type: 'String'
+  type: 'text'
 body:
-  type: 'Text'
+  type: 'richtext'
 comments:
   has_many: 'Comment'
