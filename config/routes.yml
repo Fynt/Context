@@ -10,13 +10,6 @@ default:
 
     # Blueprint API
     'GET /:extension/:name/definition': 'ItemsController#definition'
-    # These don't work yet. :(
-    # 'GET /:extension/:name': 'ItemsController#find_all'
-    # 'GET /:extension/:name/:id': 'ItemsController#find'
-    # 'PUT /:extension/:name/:id': 'ItemsController#update'
-    # 'POST /:extension/:name': 'ItemsController#create'
-    # 'DELETE /:extension/:name/:id': 'ItemsController#delete'
-
     'GET /items': 'ItemsController#find_all'
     'GET /items/:id': 'ItemsController#find'
     'PUT /items/:id': 'ItemsController#update'
