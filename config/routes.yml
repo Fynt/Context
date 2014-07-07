@@ -9,15 +9,22 @@ default:
     'GET /user/logout': 'UserController#logout'
 
     # Blueprint API
-    'GET /:extension/:name/definition': 'BlueprintController#definition'
-    'GET /:extension/:name': 'BlueprintController#find_all'
-    'GET /:extension/:name/:id': 'BlueprintController#find'
-    'PUT /:extension/:name/:id': 'BlueprintController#update'
-    'POST /:extension/:name': 'BlueprintController#create'
-    'DELETE /:extension/:name/:id': 'BlueprintController#delete'
+    'GET /:extension/:name/definition': 'ItemsController#definition'
+    # These don't work yet. :(
+    # 'GET /:extension/:name': 'ItemsController#find_all'
+    # 'GET /:extension/:name/:id': 'ItemsController#find'
+    # 'PUT /:extension/:name/:id': 'ItemsController#update'
+    # 'POST /:extension/:name': 'ItemsController#create'
+    # 'DELETE /:extension/:name/:id': 'ItemsController#delete'
+
+    'GET /items': 'ItemsController#find_all'
+    'GET /items/:id': 'ItemsController#find'
+    'PUT /items/:id': 'ItemsController#update'
+    'POST /items': 'ItemsController#create'
+    'DELETE /items/:id': 'ItemsController#delete'
 
     # Extensions API
     'GET /extensions': 'ExtensionsController#find_all'
 
     # Blueprints API
-    'GET /:extension': 'BlueprintsController#find_all'
+    'GET /blueprints': 'BlueprintsController#find_all'
