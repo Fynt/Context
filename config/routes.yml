@@ -16,6 +16,13 @@ default:
     'POST /items': 'ItemsController#create'
     'DELETE /items/:id': 'ItemsController#delete'
 
+    # History API
+    'GET /history': 'HistoryController#find_all'
+    'GET /history/:id': 'HistoryController#find'
+    'PUT /history/:id': 'HistoryController#update'
+    'POST /history': 'HistoryController#create'
+    'DELETE /history/:id': 'HistoryController#delete'
+
     # Extensions API
     'GET /extensions': 'ExtensionsController#find_all'
 
