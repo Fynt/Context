@@ -2,11 +2,25 @@ default:
     # Misc. routes
     'GET /health-check': 'DefaultController#health_check'
 
-    # Users API
+    # User API
     'POST /user/login': 'UserController#login'
     'POST /user/register': 'UserController#register'
     'GET /user/session': 'UserController#session'
     'GET /user/logout': 'UserController#logout'
+
+    # Users API
+    'GET /users': 'UsersController#find_all'
+    'GET /users/:id': 'UsersController#find'
+    'PUT /users/:id': 'UsersController#update'
+    'POST /users': 'UsersController#create'
+    'DELETE /users/:id': 'UsersController#delete'
+
+    # Groups API
+    'GET /groups': 'GroupsController#find_all'
+    'GET /groups/:id': 'GroupsController#find'
+    'PUT /groups/:id': 'GroupsController#update'
+    'POST /groups': 'GroupsController#create'
+    'DELETE /groups/:id': 'GroupsController#delete'
 
     # Blueprint API
     'GET /:extension/:name/definition': 'ItemsController#definition'
