@@ -1,7 +1,7 @@
 default:
   client: sqlite3
   connection:
-    filename: 'dev.db'
+    filename: 'data/db.sqlite'
 
 test:
   client: sqlite3
