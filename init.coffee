@@ -1,8 +1,15 @@
+prompt = require 'prompt'
 config = require('konfig')()
-context = require('Context-Data')(config)
+database = require('Context-Data').database(config)
 
-database = context.database()
+
 database.connection().migrate.latest config.migrate
 .then ->
   console.log "Initialized DB."
-  process.exit()
+
+  prompt.start()
+  prompt.get ['name', 'email', 'password'], (err, result) ->
+    #TODO Create a user.
+    
+    console.log "Created user."
+    process.exit()

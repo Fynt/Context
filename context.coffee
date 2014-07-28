@@ -11,7 +11,7 @@
 
 # load the config
 config = require('konfig')()
-context = require('Context-Data')(config)
+server = require('Context-Data').server(config)
 
 # we need to register all of the extensions in here
 # each extension will likely have some blueprints
@@ -25,4 +25,4 @@ context = require('Context-Data')(config)
 # and basically anything else they feel like. We likely couldn't allow these on the hosted service
 # but I bet people will want them for self-hosted junk.
 
-context.start()
+server.start()
