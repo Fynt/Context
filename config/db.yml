@@ -1,12 +1,17 @@
 default:
+  client: sqlite3
+  connection:
+    filename: 'dev.db'
+
+test:
+  client: sqlite3
+  connection:
+    filename: ':memory:'
+
+production:
   client: mysql
   connection:
     host: '127.0.0.1'
     user: 'root'
     password: 'root'
     database: 'context_data'
-
-test:
-  client: sqlite3
-  connection:
-    filename: ':memory:'

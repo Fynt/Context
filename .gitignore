@@ -3,6 +3,7 @@ doc
 
 # Local storage
 data/
+dev.db
 
 # Logs
 logs
