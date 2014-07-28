@@ -22,6 +22,13 @@ default:
     'POST /groups': 'GroupsController#create'
     'DELETE /groups/:id': 'GroupsController#delete'
 
+    # Permissions API
+    'GET /permissions': 'PermissionsController#find_all'
+    'GET /permissions/:id': 'PermissionsController#find'
+    'PUT /permissions/:id': 'PermissionsController#update'
+    'POST /permissions': 'PermissionsController#create'
+    'DELETE /permissions/:id': 'PermissionsController#delete'
+
     # Blueprint API
     'GET /:extension/:name/definition': 'ItemsController#definition'
     'GET /items': 'ItemsController#find_all'
@@ -31,11 +38,11 @@ default:
     'DELETE /items/:id': 'ItemsController#delete'
 
     # History API
-    'GET /histories': 'HistoryController#find_all'
-    'GET /histories/:id': 'HistoryController#find'
-    'PUT /histories/:id': 'HistoryController#update'
-    'POST /histories': 'HistoryController#create'
-    'DELETE /histories/:id': 'HistoryController#delete'
+    'GET /histories': 'HistoriesController#find_all'
+    'GET /histories/:id': 'HistoriesController#find'
+    'PUT /histories/:id': 'HistoriesController#update'
+    'POST /histories': 'HistoriesController#create'
+    'DELETE /histories/:id': 'HistoriesController#delete'
 
     # Extensions API
     'GET /extensions': 'ExtensionsController#find_all'
