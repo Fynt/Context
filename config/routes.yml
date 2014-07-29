@@ -46,6 +46,7 @@ default:
 
     # Extensions API
     'GET /extensions': 'ExtensionsController#find_all'
+    'GET /extensions/:id': 'ExtensionsController#find'
 
     # Blueprints API
     'GET /blueprints': 'BlueprintsController#find_all'
