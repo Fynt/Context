@@ -50,3 +50,4 @@ default:
 
     # Blueprints API
     'GET /blueprints': 'BlueprintsController#find_all'
+    'GET /blueprints/:id': 'BlueprintsController#find'
