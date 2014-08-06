@@ -2,5 +2,7 @@ title:
   type: 'text'
 body:
   type: 'richtext'
+category:
+  belongs_to: 'Category'
 comments:
   has_many: 'Comment'

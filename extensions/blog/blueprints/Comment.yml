@@ -1,2 +1,4 @@
 body:
   type: 'richtext'
+post:
+  belongs_to: 'Post'
