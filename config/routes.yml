@@ -29,8 +29,7 @@ default:
     'POST /permissions': 'PermissionsController#create'
     'DELETE /permissions/:id': 'PermissionsController#delete'
 
-    # Blueprint API
-    'GET /:extension/:name/definition': 'ItemsController#definition'
+    # Blueprint Item API
     'GET /items': 'ItemsController#find_all'
     'GET /items/:id': 'ItemsController#find'
     'PUT /items/:id': 'ItemsController#update'
