@@ -1,5 +1,7 @@
 title:
   type: 'text'
+  options:
+    show_in_list: true
 body:
   type: 'richtext'
 category:
