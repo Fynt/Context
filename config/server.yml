@@ -7,5 +7,9 @@ default:
   cors_enabled: true
   cors_origin: 'http://localhost:4200'
 
+  file_storage: Local
+
 test:
   port: 5001
+  
+  file_storage: Mock
