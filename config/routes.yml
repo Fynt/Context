@@ -29,6 +29,32 @@ default:
     'POST /permissions': 'PermissionsController#create'
     'DELETE /permissions/:id': 'PermissionsController#delete'
 
+    # Files API
+    'GET /files': 'FilesController#find_all'
+    'GET /files/:id': 'FilesController#find'
+    'POST /files': 'FilesController#create'
+    'POST /files/upload': 'FilesController#create'
+    'DELETE /files/:id': 'FilesController#delete'
+
+    'GET /files/show/:id': 'FilesController#show'
+    'GET /files/download/:id': 'FilesController#download'
+
+    # Image routes
+    'GET /image/width/:width/:id.:format': 'ImageController#show'
+    'GET /image/height/:height/:id.:format': 'ImageController#show'
+    'GET /image/:width/:height/:id.:format': 'ImageController#show'
+    'GET /image/scale/:scale/:id.:format': 'ImageController#show'
+    'GET /image/:width/:height/:crop_origin_x/:crop_origin_y/:id.:format': 'ImageController#show'
+    'GET /image/:scale/:width/:height/:crop_origin_x/:crop_origin_y/:id.:format': 'ImageController#show'
+
+    # Blueprint API
+    'GET /:extension/:name/definition': 'ItemsController#definition'
+    'GET /items': 'ItemsController#find_all'
+    'GET /items/:id': 'ItemsController#find'
+    'PUT /items/:id': 'ItemsController#update'
+    'POST /items': 'ItemsController#create'
+    'DELETE /items/:id': 'ItemsController#delete'
+
     # History API
     'GET /histories': 'HistoriesController#find_all'
     'GET /histories/:id': 'HistoriesController#find'
