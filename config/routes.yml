@@ -68,3 +68,10 @@ default:
     # Blueprints API
     'GET /blueprints': 'BlueprintsController#find_all'
     'GET /blueprints/:id': 'BlueprintsController#find'
+
+    # Blueprint Item API
+    'GET /:extension/:blueprint_slug': 'ItemsController#find_all'
+    'GET /:extension/:blueprint_slug/:id': 'ItemsController#find'
+    'PUT /:extension/:blueprint_slug/:id': 'ItemsController#update'
+    'POST /:extension/:blueprint_slug': 'ItemsController#create'
+    'DELETE /:extension/:blueprint_slug/:id': 'ItemsController#delete'
