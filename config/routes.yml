@@ -33,6 +33,7 @@ default:
     'GET /files': 'FilesController#find_all'
     'GET /files/:id': 'FilesController#find'
     'POST /files': 'FilesController#create'
+    'POST /files/upload': 'FilesController#create'
     'DELETE /files/:id': 'FilesController#delete'
 
     'GET /files/show/:id': 'FilesController#show'
