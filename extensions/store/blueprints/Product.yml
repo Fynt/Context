@@ -1,0 +1,24 @@
+name:
+  type: 'text'
+  options:
+    show_in_list: true
+style:
+  type: 'text'
+  options:
+    show_in_list: true
+brand:
+  type: 'text'
+category:
+  type: 'text'
+department:
+  type: 'text'
+class:
+  type: 'text'
+  options:
+    show_in_list: true
+price:
+  type: 'text'
+  options:
+    show_in_list: true
+description:
+  type: 'richtext'

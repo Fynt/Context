@@ -1,0 +1,6 @@
+name:
+  type: 'text'
+  options:
+    show_in_list: true
+description:
+  type: 'richtext'
