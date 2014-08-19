@@ -7,9 +7,9 @@ style:
   options:
     show_in_list: true
 brand:
-  type: 'text'
+  belongs_to: 'Brand'
 category:
-  type: 'text'
+  belongs_to: 'Category'
 department:
   type: 'text'
 class:
