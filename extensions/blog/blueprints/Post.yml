@@ -1,0 +1,10 @@
+title:
+  type: 'text'
+  options:
+    show_in_list: true
+body:
+  type: 'richtext'
+category:
+  belongs_to: 'Category'
+comments:
+  has_many: 'Comment'
