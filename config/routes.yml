@@ -29,6 +29,9 @@ default:
     'POST /permissions': 'PermissionsController#create'
     'DELETE /permissions/:id': 'PermissionsController#delete'
 
+    # Search API
+    'GET /search': 'SearchController#search'
+
     # Files API
     'GET /files': 'FilesController#find_all'
     'GET /files/:id': 'FilesController#find'
