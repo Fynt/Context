@@ -9,7 +9,10 @@ default:
 
   file_storage: Local
 
+  search_adapter: 'SearchIndex'
+  search_index_path: './data/index'
+
 test:
   port: 5001
-  
+
   file_storage: Mock
