@@ -1,0 +1,16 @@
+text:
+  type: 'text'
+date:
+  type: 'date'
+datetime:
+  type: 'datetime'
+  options: 'Date & Time'
+number:
+  type: 'number'
+list:
+  type: 'list'
+  values: ['value 1', 'value 2', 'value 3']
+richtext:
+  type: 'richtext'
+  options:
+    label: 'Rich Text'
